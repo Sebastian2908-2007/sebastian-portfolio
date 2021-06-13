@@ -23,9 +23,15 @@ function App() {
      setContactSelected={setContactSelected}
      ></Nav>
      <main>
-       <ContactForm></ContactForm>
-       <About></About>
+       {!contactSelected ? ( 
+         <>
        <Resume />
+       <About></About>
+       </>
+       ) : (
+        <ContactForm></ContactForm> 
+       )}
+      
      </main>
     </div>
   );
