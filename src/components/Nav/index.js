@@ -1,14 +1,16 @@
+import React, { useEffect } from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
+function Nav(props) {
+  const {
+      sections=[],
+      setCurrentSection,
+      currentSection,
+  }= props;
 
-function Nav() {
-    const sections = [
-        {name: "Resume", description: "Job experience"},
-        {name: "Portfolio", description: "my projects"}
-    ];
-
-    function sectionSelected(name) {
-        console.log((`${name} clicked`));
-    } 
+  useEffect(() => {
+      document.title = capitalizeFirstLetter(currentSection.name);
+  }, [currentSection]);
 
     return (
         <header>
@@ -25,11 +27,14 @@ function Nav() {
                         </span>
                     </li>
                     {sections.map((section) => (
-                      <li className="mx-1"
-                      key={section.name} 
-                      >
-                          <span onClick={() => sectionSelected(section.name)}>
-                              {section.name}
+                      <li className={`mx-1 ${
+                          currentSection.name === section.name && 'navActive'
+                      }`}key={section.name}>
+                          <span onClick={() => { 
+                               setCurrentSection(section)
+                               }}
+                            >
+                              {capitalizeFirstLetter(section.name)}
                           </span>
                       </li> 
                     ))}
