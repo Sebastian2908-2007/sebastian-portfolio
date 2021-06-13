@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Nav from './components/Nav';
 import Resume from "./components/Resume";
+import ContactForm from "./components/Contact";
 import React, { useState } from "react";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
      setContactSelected={setContactSelected}
      ></Nav>
      <main>
+       <ContactForm></ContactForm>
        <About></About>
        <Resume />
      </main>
