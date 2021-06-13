@@ -4,6 +4,7 @@ import Resume from "./components/Resume";
 import React, { useState } from "react";
 
 function App() {
+  const [contactSelected,setContactSelected] = useState(false)
    const [sections] =useState ([
       {name: "resume", description: "Job experience"},
       {name: "portfolio", description: "my projects"}
@@ -17,6 +18,8 @@ function App() {
      sections={sections}
      setCurrentSection={setCurrentSection}
      currentSection={currentSection}
+     contactSelected={contactSelected}
+     setContactSelected={setContactSelected}
      ></Nav>
      <main>
        <About></About>
