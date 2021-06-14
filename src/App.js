@@ -8,7 +8,7 @@ import Portfolio from "./components/Portfolio";
 
 function App() {
   const [contactSelected,setContactSelected] = useState(false)
-  const [portfolioSelected, setPortfolioSelected] = useState(false)
+ // const [portfolioSelected, setPortfolioSelected] = useState(false)
    const [sections] =useState ([
       {name: "resume", description: "Job experience"},
       {name: "portfolio", description: "my projects"}
@@ -27,22 +27,30 @@ function App() {
      currentSection={currentSection}
      contactSelected={contactSelected}
      setContactSelected={setContactSelected}
-     portfolioSelected={portfolioSelected}
-     setPortfolioSelected={setPortfolioSelected}
+     //portfolioSelected={portfolioSelected}
+     //setPortfolioSelected={setPortfolioSelected}
      ></Nav>
      <main>
        {!contactSelected ?   ( 
-         <>
-       <Resume />
-       <About></About>
+         
+         <section className="container">
+           <div>
+             <Resume></Resume> 
+        <About></About>
+        </div>
+      <section className="container"> 
        <Portfolio></Portfolio>
-       </>
+       </section>
+      </section>
        ) : (
+         <>
         <ContactForm></ContactForm> 
+       
+        
+        </>
        )}
 
       
-
       
      </main>
      <Footer></Footer>

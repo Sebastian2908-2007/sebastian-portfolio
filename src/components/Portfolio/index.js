@@ -6,7 +6,9 @@ import pizza from "../../assets/pizza-hunt.png"
 import photo from "../../assets/photo-port.png"
 const Portfolio = () => {
     return ( 
+        
     <div className="flex-row">
+        <h1>Sebastian's Portfolio</h1>
         <a href="https://thawing-spire-60901.herokuapp.com/"> 
             Auto Maintenance Log
         <img className="img-thumbnail mx-1" src={autoMaint} alt="Auto-maintenance-log"/>

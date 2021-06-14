@@ -33,9 +33,9 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  background: var(--error);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -45,10 +45,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family:  'Poiret One', cursive;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
+  color: var(--darker)
 }
 
 h1 {
@@ -81,7 +82,7 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: var(--darker);
   text-decoration: none;
   font-weight: bold;
 }
@@ -91,7 +92,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--tertiary);
 }
 
 header a {
@@ -281,7 +282,7 @@ button {
 
 a {
 	border-radius: 5px;
-	color: var(--primary);
+	color: var(--darker);
 	font-weight: 600;
 	padding: 2px 4px;
 	margin-left: -2px;

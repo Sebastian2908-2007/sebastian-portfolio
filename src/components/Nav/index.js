@@ -9,7 +9,7 @@ function Nav(props) {
       contactSelected,
       setContactSelected,
      // portfolioSelected,
-      //setPortfolioSelected
+    //  setPortfolioSelected
   }= props;
 
   useEffect(() => {
@@ -40,6 +40,8 @@ function Nav(props) {
                           <span onClick={() => { 
                                setCurrentSection(section);
                                setContactSelected(false);
+                              // setPortfolioSelected(false)
+
                                
                                }}
                             >
