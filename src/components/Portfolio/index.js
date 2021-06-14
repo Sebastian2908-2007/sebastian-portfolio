@@ -3,7 +3,7 @@ import deepThoughts from "../../assets/deep-thoughts.png"
 import zoo from "../../assets/zookeepr.png"
 import orien from "../../assets/orien-tech.png"
 import pizza from "../../assets/pizza-hunt.png"
-import ff from "../../assets/food-festival.png"
+import photo from "../../assets/photo-port.png"
 const Portfolio = () => {
     return ( 
     <div className="flex-row">
@@ -27,9 +27,9 @@ const Portfolio = () => {
               Pizza Hunt
         <img className="img-thumbnail mx-1" src={pizza} alt="pizza-hunt"/>
         </a>
-        <a href="https://sebastian2908-2007.github.io/Food-Festival/index.html"> 
-        Food Festival
-        <img className="img-thumbnail mx-1" src={ff} alt="food-festival"/>
+        <a href="https://sebastian2908-2007.github.io/photo-port/#about"> 
+        Photo-port
+        <img className="img-thumbnail mx-1" src={photo} alt="food-festival"/>
         </a>
     </div>
     )

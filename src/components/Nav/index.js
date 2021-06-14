@@ -7,7 +7,9 @@ function Nav(props) {
       setCurrentSection,
       currentSection,
       contactSelected,
-      setContactSelected
+      setContactSelected,
+     // portfolioSelected,
+      //setPortfolioSelected
   }= props;
 
   useEffect(() => {
@@ -33,11 +35,12 @@ function Nav(props) {
                     </li>
                     {sections.map((section) => (
                       <li className={`mx-1 ${
-                          currentSection.name === section.name && !contactSelected && 'navActive'
+                          currentSection.name === section.name && !contactSelected  && 'navActive' 
                       }`}key={section.name}>
                           <span onClick={() => { 
-                               setCurrentSection(section)
+                               setCurrentSection(section);
                                setContactSelected(false);
+                               
                                }}
                             >
                               {capitalizeFirstLetter(section.name)}
