@@ -1,7 +1,7 @@
 # sebastian-portfolio
 ## Description
 This is a project still in the making. It's intent is to show my work to futureemployers
-***This is a horrible project that I did during my bootcamp I was in a hurry and just learning how to code I am much better now check projects after september 2021***
+***This is a horrible project that I did during my bootcamp I was in a hurry and just learning how to code I am much better now check projects after september 2021 also many typos SMH and a different mindset but I will leave it to represent my journey edit 6/22/2022***
 
 ## Table Of Contents
 [Description](#description)
